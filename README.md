@@ -1,70 +1,114 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#  [TodoApp](https://shruthi-ramesh-2003.github.io/todo-app/)
 
-In the project directory, you can run:
+A simple Todo app built with React.js, allowing users to add, delete, and mark tasks as completed. The app also includes features like task search, data persistence using `localStorage`, and conditional rendering for tasks based on their completion status.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Add Task**: Add new tasks to the todo list.
+- **Delete Task**: Remove tasks from the list.
+- **Mark as Complete**: Toggle the completion status of tasks.
+- **Search**: Search tasks by name.
+- **Data Persistence**: Tasks are saved in `localStorage` and persist even after page refresh.
+- **Responsive**: The app is fully responsive and works well on both mobile and desktop devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **React.js**: JavaScript library for building user interfaces.
+- **HTML5**: Markup for the app structure.
+- **CSS3**: Styling for the app.
+- **localStorage**: For persisting tasks even after browser refresh.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js and npm**: You need Node.js and npm installed on your machine. If you don't have them, you can download and install from [here](https://nodejs.org/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps to Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/Shruthi-Ramesh-2003/Fetch_Api_TodoApp.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navigate to the project directory**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd Fetch_Api_TodoApp
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Install dependencies**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Since this project uses React, run the following command to install the required dependencies (including React):
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Start the development server**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   After the installation is complete, start the development server with the following command:
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Open your browser**:
 
-### Analyzing the Bundle Size
+   Go to [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment with GitHub Pages
 
-### Making a Progressive Web App
+To deploy this React app to GitHub Pages, I followed these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Install `gh-pages` as a dev dependency:
 
-### Advanced Configuration
+   ```bash
+   npm install gh-pages --save-dev
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Add the following to the `scripts` section of your `package.json`:
 
-### Deployment
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Set the `homepage` field in your `package.json` to the GitHub Pages URL:
 
-### `npm run build` fails to minify
+   ```json
+   "homepage": "https://Shruthi-Ramesh-2003.github.io/Fetch_Api_TodoApp"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Run the following command to deploy:
+
+   ```bash
+   npm run deploy
+   ```
+
+   This will build the app and deploy it to GitHub Pages.
+
+5. Visit the deployed app:
+
+ https://Shruthi-Ramesh-2003.github.io/Fetch_Api_TodoApp
+
+
+
+## Usage
+
+- Use the input field to add new tasks.
+- Click the "Mark Done" button to mark a task as completed.
+- Use the "Delete" button to remove tasks from the list.
+- The search bar allows you to filter tasks by their title.
+
+
+
+
+
+
+
