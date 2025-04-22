@@ -1,0 +1,22 @@
+# .github/workflows/cd-windows.yml
+
+name: Continuous Deployment (Windows)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+        shell: pwsh
+      - run: |
+          git remote set-url origin "https://git:${env:GITHUB_TOKEN}@github.com/${env:GITHUB_REPOSITORY}.git"
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        shell: pwsh
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
