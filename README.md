@@ -1,6 +1,6 @@
 
 
-# Todo App [TodoApp](https://Shruthi-Ramesh-2003.github.io/Fetch_Api_TodoApp)
+# Todo App [TodoApp](https://shruthi-ramesh-2003.github.io/todo-app/)
 
 A simple Todo app built with React.js, allowing users to add, delete, and mark tasks as completed. The app also includes features like task search, data persistence using `localStorage`, and conditional rendering for tasks based on their completion status.
 
