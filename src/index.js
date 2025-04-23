@@ -1,17 +1,19 @@
+// Serves as the entry point of the application.
+// Imports necessary modules and styles.
+// Renders the App component into the DOM's root element.
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
+const root = ReactDOM.createRoot(document.getElementById('root'));- //This finds the HTML element with the ID `root` in `public/index.html`
+root.render(//Tells React to render the JSX (<App />) into the root container
+  <React.StrictMode> 
+  {/* helps find potential problems in the app */}
+    <App />   
+  
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
